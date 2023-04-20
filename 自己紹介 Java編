@@ -1,0 +1,13 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args){
+        
+        System.out.print("name: ");
+        System.out.println("Tanaka Yuto");
+        System.out.print("language: ");
+        System.out.println("Java");
+        System.out.print("hitokoto: ");
+        System.out.println("Nice to meet you!");
+    }
+}
