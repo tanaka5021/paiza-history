@@ -1,0 +1,15 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args){
+        
+        Scanner scanner = new Scanner(System.in);
+        
+        int a_money = scanner.nextInt();
+        int b_money = scanner.nextInt();
+        
+        int sum = a_money+b_money;
+        
+        System.out.print(sum);
+    }
+}
