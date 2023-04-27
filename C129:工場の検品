@@ -1,0 +1,49 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args){
+        
+        Scanner scanner = new Scanner(System.in);
+        
+        int N = scanner.nextInt();//種類
+        int M = scanner.nextInt();//個数
+        
+        int[] sample;
+        sample = new int[M];//お手本
+        int[] come;
+        come = new int[M];//流れてくる寿司
+        
+        for(int i=0;i<M;i++){
+            sample[i]=scanner.nextInt();
+        }
+        
+        for(int j=0;j<M;j++){
+            come[j]=scanner.nextInt();
+        }
+        
+        Arrays.sort(sample);//昇順  
+        Arrays.sort(come);//昇順
+        
+        int corect_count=0;
+        
+        for(int k=0;k<M;k++){
+            
+            if(sample[k]==come[k]){
+                
+                corect_count++;
+            
+            }else{
+            
+                break;
+                
+            }
+            
+        }
+        
+        if(corect_count==M){
+            System.out.println("Yes");
+        }else{
+            System.out.println("No");
+        }
+    }
+}
