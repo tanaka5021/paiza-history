@@ -1,0 +1,15 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args){
+        
+        Scanner scanner = new Scanner(System.in);
+        
+        int have_money = scanner.nextInt();//所持金
+        int profit_money = scanner.nextInt();//得した金額
+        int lose_money = scanner.nextInt();//損した金額
+
+        
+        System.out.println(have_money+profit_money-lose_money);
+    }
+}
